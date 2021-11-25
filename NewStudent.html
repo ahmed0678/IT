@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <title> Student Form page </title>
+        <style>
+            .form {
+              background-color: white;
+              color: black;
+              border: 2px solid black;
+              margin: 20px;
+              padding: 20px;
+            }
+            </style>
+    </head>
+    <body>
+        <h1>New Student</h1>
+        <!------Personal information------>
+        <form action = "/action_page.php">
+            <fieldset>
+                <legend>Personal information</legend>
+                <label for="name">Full name: </label>
+                <input type="text" id="name" name="name"><br><br>
+                <label for="birthdate">Birthdate: </label>
+                 <input type="date" id="birthdate" name="birthdate"><br><br>
+                  <label for="gender">Gender: </label>
+                  <input type="radio" id="male" name="choose_gender" value="male">
+                  <label for="male">Male</label>
+                  <input type="radio" id="female" name="choose_gender" value="female">
+                  <label for="female">Female</label><br><br>
+            </fieldset><br>
+            
+            <!------Contact information------>
+            <fieldset>
+                <h3>Contact information</h3>
+                <label for="email">Email: </label>
+                <input type="text" id="email" name="email"><br><br>
+                <label for="phone">Phone: </label>
+                <input type="tel" id="phone" name="phone"><br><br>
+                <label for="address">Address: </label>
+                <textarea name="address" rows="10" cols="100"></textarea><br><br>
+            </fieldset><br>
+            
+            <!------Contact information------>
+            <fieldset>
+                <h3>University information</h3>
+                <label for="choose your faculty">Choose your faculty: </label>
+                <select name="Faculty 1" id="faculty">
+                    <option value="Faculty 1"> Faculty 1 </option>
+                    <option value="Faculty 2"> Faculty 2 </option>
+                    <option value="Faculty 3"> Faculty 3 </option>
+                </select><br><br>
+            </fieldset><br>
+
+            <!------Add button------>
+            <input type="submit" value="add">
+        </form>
+    </body>
+</html>
